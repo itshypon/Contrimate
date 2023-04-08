@@ -69,3 +69,84 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+  .card-div {
+    /* width: min(380px, 30vw); */
+    padding: 10px;
+    border-radius: 20px;
+    /* border: solid 3px #6a11cb; */
+    /* box-shadow: 0px 0px 7px 1px #595555; */
+    /* box-shadow: 0px 0px 7px 1px gray; */
+    transition: transform 0.1s linear,
+                box-shadow 0.1s linear;
+  }
+  .card-div-hover {
+    transition: transform 0.1s linear,
+                box-shadow 0.1s linear;
+  }
+  
+  .card-div:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 12px 1px gray;
+  }
+  
+  .card-div-hover:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 1px rgb(181, 178, 178);
+  }
+  
+  .repo-name {
+    overflow: hidden;
+  }
+  
+  .repo-label-div {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .repo-labels {
+    font-size: 12px;
+    padding: 0px 1px;
+    margin: 2px 2px;
+    /* border: solid 1px indigo; */
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .repo-desc {
+    height: 120px;
+    font-size: 14px;
+    overflow: hidden;
+  }
+  .navbar-brand {
+    width: 120px;
+  }
+  .nav-cirrcle {
+    width: 30px !important;
+  }
+  .fixwidth{
+    max-width: 350px;
+  }
+  .carousel-item{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+  .carousel-caption{
+    backdrop-filter: blur(5px);
+    webkit-backdrop-filter: blur(5px);
+}
