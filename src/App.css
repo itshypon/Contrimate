@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+.card-div {
+  color: #aaa;
+  display: inline-block;
+  max-width: 350px;
+  background-color: #111;
+  border-radius: 15px;
+  padding: 5px 10px;
+  /* border: solid 3px #ff5f1f; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-div:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 7px 0px #ff5f1f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.repo-name {
+  color: #ff5f1f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.repo-desc {
+  font-size: 14px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.repo-labels {
+  margin: 2px;
+  font-size: 11px;
+  /* color: #ff5f1f; */
+  color: #eee;
+  font-weight: 500;
+  padding: 1px 3px;
+  background-color: #333;
+  border-radius: 7px;
+  border: solid 1px #ff5f1f;
+}
+
+.repo-label-div {
+  height: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-wrap: wrap;
+  overflow: hidden;
 }
