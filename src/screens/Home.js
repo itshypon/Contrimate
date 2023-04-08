@@ -1,5 +1,5 @@
-import Card from "../components/Card";
-import Navbar from "../components/NavBar";
+import Card from "../ajay/Card";
+import Navbar from "../ajay/NavBar";
 
 export default function Home() {
     return(

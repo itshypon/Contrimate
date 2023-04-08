@@ -1,4 +1,4 @@
-import logo from "../components/images/logo.png"
+import logo from "../ajay/images/logo.png"
 export default function Navbar() {
     return (
     <>
