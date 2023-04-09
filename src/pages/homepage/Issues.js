@@ -15,9 +15,9 @@ function Issues() {
             {/* <div className="form-outline w-auto border border-danger col-4 mx-3 mt-3">
                 <input type="text" onChange={handleSearchInput} value={searchInput} className="form-control" placeholder="Search"></input>
             </div> */}
-            <div className="row mx-2">
+            <div className="row mx-auto container card-box">
                 {issues.map((data, index) =>
-                    <div className="col-lg-3 col-md-6 col-12 px-2 my-2 fixwidth"><Card key={index} /></div>
+                    <div className="col-lg-4 col-md-6 col-12 px-2 my-2 fixwidth"><Card key={index} /></div>
                 )}
             </div>
         </>

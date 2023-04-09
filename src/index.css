@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 
-:root{
-  --ff-mont : 'Montserrat', sans-serif;
-  --ff-pop : 'Poppins', sans-serif;
+:root {
+  --ff-mont: 'Montserrat', sans-serif;
+  --ff-pop: 'Poppins', sans-serif;
 }
 
 /* Box sizing rules */
@@ -13,9 +13,9 @@
 }
 
 /* Remove default margin */
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -30,12 +30,13 @@ html:focus-within {
 }
 
 html,
-body{
-    height: 100%;
+body {
+  height: 100%;
 }
 
 /* Set core body defaults */
 body {
+  font-family: var(--ff-mont),sans-serif;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -57,9 +58,9 @@ svg {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -69,84 +70,143 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
 .gradient-custom {
   /* fallback for old browsers */
   background: #6a11cb;
-  
+
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-  
+
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
-  }
-  .card-div {
-    /* width: min(380px, 30vw); */
-    padding: 10px;
-    border-radius: 20px;
-    /* border: solid 3px #6a11cb; */
-    /* box-shadow: 0px 0px 7px 1px #595555; */
-    /* box-shadow: 0px 0px 7px 1px gray; */
-    transition: transform 0.1s linear,
-                box-shadow 0.1s linear;
-  }
-  .card-div-hover {
-    transition: transform 0.1s linear,
-                box-shadow 0.1s linear;
-  }
-  
-  .card-div:hover {
-    transform: scale(1.01);
-    box-shadow: 0px 0px 12px 1px gray;
-  }
-  
-  .card-div-hover:hover {
-    transform: scale(1.01);
-    box-shadow: 0px 0px 10px 1px rgb(181, 178, 178);
-  }
-  
-  .repo-name {
-    overflow: hidden;
-  }
-  
-  .repo-label-div {
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .repo-labels {
-    font-size: 12px;
-    padding: 0px 1px;
-    margin: 2px 2px;
-    /* border: solid 1px indigo; */
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  
-  .repo-desc {
-    height: 120px;
-    font-size: 14px;
-    overflow: hidden;
-  }
-  .navbar-brand {
-    width: 120px;
-  }
-  .nav-cirrcle {
-    width: 30px !important;
-  }
-  .fixwidth{
-    max-width: 350px;
-  }
-  .carousel-item{
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
 }
-  .carousel-caption{
-    backdrop-filter: blur(5px);
-    webkit-backdrop-filter: blur(5px);
+
+.card-div {
+  /* width: min(380px, 30vw); */
+  padding: 10px;
+  border-radius: 20px;
+  /* border: solid 3px #6a11cb; */
+  /* box-shadow: 0px 0px 7px 1px #595555; */
+  /* box-shadow: 0px 0px 7px 1px gray; */
+  transition: transform 0.1s linear,
+    box-shadow 0.1s linear;
+}
+
+.card-div-hover {
+  transition: transform 0.1s linear,
+    box-shadow 0.1s linear;
+}
+
+.card-div:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 12px 1px gray;
+}
+
+.card-div-hover:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 1px rgb(181, 178, 178);
+}
+
+.repo-name {
+  overflow: hidden;
+}
+
+.repo-label-div {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.repo-labels {
+  font-size: 12px;
+  padding: 0px 1px;
+  margin: 2px 2px;
+  /* border: solid 1px indigo; */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.repo-desc {
+  height: 120px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  width: 120px;
+}
+
+.nav-cirrcle {
+  width: 30px !important;
+}
+
+.fixwidth {
+  max-width: 350px;
+}
+
+.carousel-item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-caption {
+  backdrop-filter: blur(5px);
+  webkit-backdrop-filter: blur(5px);
+}
+
+header.header-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.slogan-div {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.cat-div img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: solid 5px orange;
+}
+.popular-search-label {
+  font-size: 12px;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.popular-search-div {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+.text-fourth {
+  color: #B2B1B9;
+}
+.bg-second {
+  background-color: #595260;
+}
+.bg-first {
+  background-color: #2C2E43;
 }

@@ -6,7 +6,7 @@ export default function Card() {
 
 
     return (<>
-        <div className="card-div bg-slategray white">
+        <div className="card-div bg-first white">
             <div className="repo-name text-light">
             <i class="bi bi-github me-2 mb-2"></i>{repoName}
             </div>
@@ -14,7 +14,7 @@ export default function Card() {
                 {repoDesc}
             </div>
             <div className="repo-label-div d-flex justify-content-start">
-                {labelList.map((label)=> {return (<span className="repo-labels px-2 bg-gray">{label}</span>)})}
+                {labelList.map((label)=> {return (<span role="button" className="repo-labels px-2 text-gradient red-orange">{label}</span>)})}
             </div>
         </div>
         {/* <div class="card text-center card-div-hover text-bg-primary">
