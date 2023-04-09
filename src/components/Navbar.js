@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../components/Images/logo.png"
 function Navbar() {
+    const [user, setUser] = useState(null);
     return (
         <div className="Navbar fixed-top">
             <nav className="navbar navbar-expand-lg navbar-light bg-white">
@@ -48,21 +49,27 @@ function Navbar() {
                     <div className="d-flex align-items-center">
 
                         <div className="dropdown">
+                        {user ?
+                                
                             <a
-                                className="dropdown-toggle d-flex align-items-center hidden-arrow"
-                                href="#"
-                                id="navbarDropdownMenuAvatar"
-                                role="button"
-                                data-mdb-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                <img
-                                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                                    className="rounded-circle nav-cirrcle"
-                                    alt="Black and White Portrait of a Man"
-                                    loading="lazy"
-                                />
-                            </a>
+                            className="dropdown-toggle d-flex align-items-center hidden-arrow"
+                            href="#"
+                            id="navbarDropdownMenuAvatar"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <img
+                                src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                className="rounded-circle nav-cirrcle"
+                                alt="Black and White Portrait of a Man"
+                                loading="lazy"
+                            />
+                        </a> :
+                                <button className="btn btn-secondary btn-lg bg-first text-light">
+                                    <i class="bi bi-github me-3"></i>Authorize
+                                </button>
+                            }
                             <ul
                                 className="dropdown-menu dropdown-menu-end"
                                 aria-labelledby="navbarDropdownMenuAvatar"

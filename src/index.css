@@ -205,8 +205,33 @@ header.header-class {
   color: #B2B1B9;
 }
 .bg-second {
-  background-color: #595260;
+  background-color: #595260 !important;
 }
 .bg-first {
-  background-color: #2C2E43;
+  background-color: #2C2E43 !important;
+}
+.animate-text{
+  position: relative;
+}
+.animate-text::after{
+  content: "";
+  height: 100%;
+  background-color: #121212;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-left: 2px solid #fff;
+  animation: animate 4s steps(12) infinite;
+}
+.home-text{
+  overflow: hidden;
+}
+@keyframes animate {
+  40%,60%{
+      left: 100%;
+  }
+  100%{
+      left:0;
+    }
 }
