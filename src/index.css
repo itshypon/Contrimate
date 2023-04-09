@@ -204,6 +204,9 @@ header.header-class {
 .text-fourth {
   color: #B2B1B9;
 }
+.bg-third {
+  background-color: #B2B1B9 !important;
+}
 .bg-second {
   background-color: #595260 !important;
 }
@@ -235,4 +238,7 @@ header.header-class {
   100%{
       left:0;
     }
+}
+.header-margin {
+  margin-top: 45px;
 }
