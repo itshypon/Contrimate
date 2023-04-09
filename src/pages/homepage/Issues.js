@@ -25,7 +25,7 @@ function Issues() {
     return (
         <>
         <SearchBar />
-        <button onClick={fetch} className="btn btn-light">Fetch</button>
+        {/* <button onClick={fetch} className="btn btn-light">Fetch</button> */}
             {/* <div className="form-outline w-auto border border-danger col-4 mx-3 mt-3">
                 <input type="text" onChange={handleSearchInput} value={searchInput} className="form-control" placeholder="Search"></input>
             </div> */}
