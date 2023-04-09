@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <header className="App-header">
+        <header className="App-header bg-third">
           <Routes>
             <Route path='/' element={<Template><Header /><Issues /></Template>}></Route>
             <Route path='/login' element={<Login />}></Route>
