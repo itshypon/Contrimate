@@ -2,7 +2,7 @@ import React from "react";
 function Footer() {
     return (
         <div className="">
-            <footer className="bg-primary text-center text-white">
+            <footer className="bg-first text-center text-white">
 
                 <div className="container p-4">
                     <section className="mb-4">

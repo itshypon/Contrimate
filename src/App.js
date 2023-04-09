@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
+import Header from './components/Header';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Routes>
-            <Route path='/' element={<Template><Carousel /><Issues /></Template>}></Route>
+            <Route path='/' element={<Template><Header /><Issues /></Template>}></Route>
             <Route path='/login' element={<Login />}></Route>
           </Routes>
           {/* <RouterProvider router={router} /> */}
