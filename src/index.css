@@ -226,7 +226,7 @@ header.header-class {
   top: 0;
   width: 100%;
   border-left: 2px solid #fff;
-  animation: animate 4s steps(12) infinite;
+  animation: animate 3s steps(12) infinite;
 }
 .home-text{
   overflow: hidden;
