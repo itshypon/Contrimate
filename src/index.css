@@ -216,7 +216,8 @@ header.header-class {
 .animate-text::after{
   content: "";
   height: 100%;
-  background-color: #121212;
+  background-color: #2C2E43;
+  overflow: hidden !important;
   position: absolute;
   left: 0;
   top: 0;
