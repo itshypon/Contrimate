@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import logo from "../components/Images/logo.png"
 function Navbar() {
+    const authorize = (e) => {
+        e.preventDefault();
+        alert("Authorization - Comming Soon")
+    }
     const [user, setUser] = useState(null);
     return (
         <div className="Navbar fixed-top">
@@ -66,7 +70,7 @@ function Navbar() {
                                 loading="lazy"
                             />
                         </a> :
-                                <button className="btn btn-secondary btn-lg bg-first text-light">
+                                <button className="btn btn-secondary btn-lg bg-first text-light" onClick={authorize}>
                                     <i class="bi bi-github me-3"></i>Authorize
                                 </button>
                             }

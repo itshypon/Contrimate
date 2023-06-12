@@ -1,5 +1,6 @@
 import React from "react";
 function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
         <div className="">
             <footer className="bg-first text-center text-white">
@@ -55,7 +56,7 @@ function Footer() {
                 </div>
 
                 <div className="text-center p-3" style={{ "backgroundColor": "rgba(0, 0, 0, 0.2)" }}>
-                    © 2020 Copyright:
+                    © {currentYear} Copyright:
                     <a className="text-white" href="/">ContriMate</a>
                 </div>
 

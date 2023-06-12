@@ -137,6 +137,12 @@ svg {
   overflow: hidden;
 }
 
+.repo-desc-2 {
+  height: auto;
+  font-size: 10px;
+  overflow: hidden;
+}
+
 .navbar-brand {
   width: 120px;
 }
@@ -212,6 +218,9 @@ header.header-class {
 }
 .bg-first {
   background-color: #2C2E43 !important;
+}
+.text-first {
+  color: #2C2E43 !important;
 }
 .animate-text{
   position: relative;
